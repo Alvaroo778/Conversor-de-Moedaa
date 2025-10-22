@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./projeto.css">
+</head>
+
+<body>
+    <div class="img-logo">
+        <img class="img-log01" src="./logo.gif" alt="logo-img">
+    </div>
+    <main>
+        <label>
+            Converter <b>de</b>:
+            <select>
+                <option>
+                    R$ Real Brasileiro
+                </option>
+            </select>
+        </label>
+
+        <label>
+            Converter <b>para</b>:
+            <select class="alterar-moeda">
+                <option value="Dolar">US$ Dolar Americano</option>
+                <option value="Euro">€ Euro</option>
+            </select>
+        </label>
+
+        <label>
+            <b>Valor</b>:
+            <input class="input-moeda" placeholder="R$ 10.000,00">
+        </label>
+
+        <button class="Button">Converter</button>
+
+        <Section>
+            <div class="caixa1">
+                <img src="./brasil 2.png" alt="br">
+                <p class="moeda">Real Brasileiro</p>
+                <p class="moeda-valor-novo">R$ 0</p>
+            </div>
+
+            <div class="vector1">
+                <img src="./Vector.png" alt="">
+            </div>
+
+            <div class="caixa1">
+                <img class="img-moeda" src="./estados-unidos (1) 1.png" alt="EUA">
+                <p class="moeda" id="moeda-name">Dolar Americano</p>
+                <p class="moeda-valor">US$ 0</p>
+            </div>
+
+        </Section>
+    </main>
+</body>
+<script src="./projetojs.js" type="module"></script>
+
+</html>
