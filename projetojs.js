@@ -6,12 +6,14 @@ function convertValues() {
     const inputdaMoeda = document.querySelector('.input-moeda').value;
     const valorEmReal = document.querySelector('.moeda-valor-novo')
     const valorEmRealConvertido = document.querySelector('.moeda-valor')
+   
 
     console.log(inputdaMoeda);
 
     const DolarToday = 5.30
     const EuroToday = 6.90
-
+    const GuaraniToday = 0.00076
+   
 
 
     if (moedaSelect.value == "Dolar") {
@@ -27,6 +29,17 @@ function convertValues() {
             currency: 'EUR',
         }).format(inputdaMoeda / EuroToday);
     }
+
+    if (moedaSelect.value == "Guarani") {
+        valorEmRealConvertido.innerHTML = new Intl.NumberFormat('es-PY', {
+            style: 'currency',
+            currency: 'PYG',
+        }).format(inputdaMoeda / GuaraniToday);
+    }
+
+
+    
+        
 
     valorEmReal.innerHTML = new Intl.NumberFormat('pt-BR', {
         style: 'currency',
@@ -48,6 +61,10 @@ function mudabandeira() {
     if (moedaSelect.value == "Euro") {
         mudancaBandeira.innerHTML = "Euro"
 
+    }
+
+    if (moedaSelect.value == "Guarani") {
+        mudancaBandeira.innerHTML = "Guarani Paraguaio"
     }
 
     convertValues()

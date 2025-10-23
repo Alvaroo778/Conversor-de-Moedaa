@@ -15,10 +15,11 @@
     <main>
         <label>
             Converter <b>de</b>:
-            <select>
-                <option>
-                    R$ Real Brasileiro
-                </option>
+            <select class="moeda-voltando">
+                <option value="rs">R$ Real Brasileiro</option>
+                <option value="Dr">US$ Dolar Americano</option>
+                <option value="Er">€ Euro</option>
+                <option value="Gr">₲ Guarani</option>
             </select>
         </label>
 
@@ -27,6 +28,9 @@
             <select class="alterar-moeda">
                 <option value="Dolar">US$ Dolar Americano</option>
                 <option value="Euro">€ Euro</option>
+                <option value="Guarani">₲ Guarani</option>
+                <option value="Real">R$ Real Brasileiro</option>
+                
             </select>
         </label>
 
@@ -53,6 +57,8 @@
                 <p class="moeda" id="moeda-name">Dolar Americano</p>
                 <p class="moeda-valor">US$ 0</p>
             </div>
+
+           
 
         </Section>
     </main>
